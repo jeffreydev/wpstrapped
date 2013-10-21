@@ -1,0 +1,168 @@
+/*
+Theme Name: Wp Strapped
+Theme URI: 
+Description: WordPress Theme based on Twitter Bootstrap 3.0
+Version: 1.0
+Author: Jeff Clark
+Author URI: 
+Text Domain: 
+*/
+
+
+body { 
+     padding-top: 60px; 
+     font: 17px/27px Arial;
+}
+
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+    display:block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 10px 10px;
+}
+
+.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin:0;
+    max-width: 98.5%;
+    padding:0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size:11px;
+    line-height:17px;
+    margin:0;
+    padding:0 4px 5px;
+}
+
+
+
+
+/* =Drop Down Menu *
+----------------------------------------------- */
+.nav ul.children {
+    display: none;
+    background: #CCC;
+    margin-top: 20px;
+}
+
+ul.nav li a:hover {
+    
+}
+
+ul.nav li:hover > ul.children {
+	display: block;
+        position: absolute;
+        width: 200px;
+        top: 41px;
+        left: 0;
+        margin: 0;
+        padding: 3px 10px;
+}
+
+.nav li ul.children li {
+    display: block;
+    text-align: left;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.nav ul.children li ul.children {
+    position: relative;
+    left: 200px;
+    top: 0px;
+}
+
+
+ul.nav li ul:before {
+    position: absolute;
+    top: -9px;
+    left: 20px;
+    display: inline-block;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #CCC;
+    border-left: 9px solid transparent;
+    content: '';
+}
+
+
+.navbar-inverse .navbar-inner {
+    background: #658db5;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6 {}
+
+p {}
+
+blockquote {}
+
+
+
+

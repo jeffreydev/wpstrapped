@@ -1,0 +1,821 @@
+/*
+Theme Name: Picmonic
+Theme URI: 
+Description: Custom Picmonic WordPress Theme
+Version: 1.0
+Author: Jeff Clark
+Author URI: http://www.jeffreydev.com
+Text Domain: Picmonic
+*/
+
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+html,body { padding: 0; margin: 0px;}
+body { 
+     font-size: 18px;
+     line-height: 27px;
+     font-family: 'rosarioregular';
+     margin: 0;
+}
+
+
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+    display:block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 10px 10px;
+}
+
+.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+a, a:hover, a:visited {
+    color: #3189f5;
+}
+
+a.btn {
+    color: #FFF;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin:0;
+    max-width: 98.5%;
+    padding:0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size:11px;
+    line-height:17px;
+    margin:0;
+    padding:0 4px 5px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+blockquote {
+    border-left: none;
+}
+
+
+
+
+/* =Drop Down Menu *
+----------------------------------------------- */
+/*.nav ul.children {
+    display: none;
+    background: #CCC;
+    margin-top: 20px;
+}
+
+ul.nav li a:hover {
+    
+}
+
+ul.nav li:hover > ul.children {
+	display: block;
+        position: absolute;
+        width: 200px;
+        top: 41px;
+        left: 0;
+        margin: 0;
+        padding: 3px 10px;
+}
+
+.nav li ul.children li {
+    display: block;
+    text-align: left;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.nav ul.children li ul.children {
+    position: relative;
+    left: 200px;
+    top: 0px;
+}
+
+
+ul.nav li ul:before {
+    position: absolute;
+    top: -9px;
+    left: 20px;
+    display: inline-block;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #CCC;
+    border-left: 9px solid transparent;
+    content: '';
+}
+
+
+.navbar-inverse .navbar-inner {
+    background: #658db5;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    color: #FFF;
+} 
+*/
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus, .navbar .nav>li>a {
+    background: none;
+    box-shadow: none;
+    color: #FFF;
+    text-shadow: none;
+}
+
+
+ i {
+    color: #FFF !important;
+}
+
+li.home-icon {
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+}
+
+ul.nav li a, ul.nav li,
+ul.nav li a:hover {
+    color: #FFF;
+    font-size: 20px;
+    background: none;
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+li.sign-in a {
+    color: #ffe451 !important;
+}
+
+p {
+    margin: 20px 0;
+}
+
+
+/* =Header *
+----------------------------------------------- */
+#head {
+    display: block;
+    height: 755px;
+    background: #0080ff;
+}
+
+.img-center {
+    text-align: center;
+}
+
+.nav {
+    margin-top: 15px;
+}
+
+.icon-bar {
+    background: #FFF;
+}
+
+.navbar-wrapper {
+    background: #0080ff;
+}
+
+.navbar-brand {
+    background: url('images/logo.png') no-repeat;
+    width: 200px;
+    height: 25px;
+    margin-top: 12px;
+}
+
+.navbar {
+    margin: 20px 0;
+}
+
+.jumbotron {
+    background: transparent;
+    color: #FFF;
+    width: auto;
+}
+
+.jumbotron h1 {
+    font-family: 'rosariobold_italic';
+}
+
+.jumbotron p, .jumbotron h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.jumbotron .btn {
+    background: #005eba;
+    border: 3px solid #0176e4;
+    border-radius: 0;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    font-family: 'rosariobold_italic';
+}
+
+.jumbotron .btn-purple {
+    background: #8400ff;
+    border: 3px solid #6703d7;
+}
+
+.lrg-testimonials h2, .in-action h2,
+.purple-block h2, .education-block h2 {
+    margin-bottom: 30px;
+    font-family: 'rosariobold';
+    font-size: 40px;
+}
+
+/** blockquote styles **/
+.bq3 { background: url('images/home/testimonials/blockquote-top.png') top left no-repeat; padding-left: 55px;  }
+.bq3 p { padding-right: 35px; background: url('images/home/testimonials/blockquote-bottom.png') bottom right no-repeat; padding-bottom: 15px;}
+
+.from {
+    font-family: 'rosarioitalic';
+    padding-left: 55px;
+}
+
+.in-action h2 {
+    color: #FFF;
+}
+
+h2.block-title {
+    font-family: 'rosariobold_italic';
+    font-size: 30px;
+}
+
+.purple-block, .in-action,
+.lrg-testimonials, .education-block, 
+footer, .offer, .block {
+    padding: 40px 0;
+}
+
+.purple-block {
+    background: #2a0050;
+    color: #FFF;
+    border-top: 3px solid #5501a2;
+    text-align: center
+}
+
+.purple-block .img-circle {
+    border: 10px solid #32005f;
+}
+
+.purple-block .col-lg-4 {
+    text-align: left;
+}
+
+.terq {
+    color: #00e4ff;
+}
+
+.in-action {
+    height: 868px;
+    background: url('images/home/action-bg.jpg') repeat-x;
+}
+
+#action {
+    height: 740px
+}
+
+.sm-testimonials {
+    background: #93c0fb;
+    border-bottom: 4px solid #bed8fb;
+    color: #FFF;
+    padding-bottom: 120px;
+    padding-top: 50px;
+}
+
+.lrg-testimonials {
+    background: #5a62d2;
+    border-bottom: 4px solid #373c81;
+    color: #FFF;
+    padding-bottom: 120px;
+}
+
+.sm-testimonials .test {
+    background: #4c92ea
+}
+
+
+.test {
+    background: #4148aa;
+    color: #FFF;
+    padding: 30px;
+    position: relative;
+}
+
+.test .img-circle {
+    position: absolute;
+    bottom: -80px;
+    right: 5%;
+    border: 10px solid #5a62d2;
+}
+
+.sm-testimonials .test .img-circle {
+    border: 10px solid #93c0fb;
+}
+
+.test:last-of-type {
+    margin-top: 90px;
+}
+
+.sm-testimonials .test:last-of-type {
+    margin-top: 60px;
+}
+
+.education-block {
+    background: #89949b;
+    color: #FFF;
+    border-bottom: 4px solid #626a70;
+}
+
+.education-block p {
+    margin: 20px;
+}
+
+img.grey {
+    border: 10px solid #626a70;
+}
+
+.offer {
+    font-size: 25px;
+}
+
+.offer .btn {
+    padding: 10px 20px;
+    font-family: 'rosariobold_italic';
+    font-size: 17px;
+}
+
+footer {
+    background: #2a0050;
+    color: #FFF;
+    padding-top: 0;
+}
+
+footer ul {
+    text-align: center;
+    margin: 80px 0 30px -40px;
+}
+
+footer ul li a,
+footer ul li a:visited, 
+footer ul li a:hover {
+    color: #FFF;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+
+
+/* =Testimonials *
+----------------------------------------------- */
+.single-testimonial {
+    margin-bottom: 50px;
+    color: #405973;
+    font-size: 20px;
+}
+
+.single-testimonial img {
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.single-testimonial h3 {
+    font-family: 'rosariobold_italic';
+    font-size: 25px;
+    color: #3299fd;
+}
+
+.test-location {
+    color: #73baff;
+    font-family: 'rosarioitalic';
+    font-size: 18px;
+}
+
+
+/* =Pages *
+----------------------------------------------- */
+.page-header {
+    background: #f8f7f7;
+    padding: 50px 0;
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    color: #405973;
+}
+
+.page-header h2 {
+    color: #3299fd;
+    font-size: 70px;
+    font-family: 'rosariobold_italic';
+}
+
+ul.sidebar-nav {
+    margin: 30px 0 0 -40px;
+}
+
+.sidebar-nav li img {
+    display: block;
+}
+
+.sidebar-nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.entry-content, .entry-content-team {
+    color: #405973;
+    width: 75%;
+    margin: auto;
+    line-height: 33px;
+}
+
+.entry-content-team {
+    width: 100%;
+}
+
+
+/* = Product *
+----------------------------------------------- */
+.product-wrap {
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+.product-wrap h3, .entry-content h3 {
+    font-size: 33px;
+    color: #3299fd;
+    font-family: 'rosariobold_italic';
+    margin-bottom: 40px;
+}
+
+.price-top h3 {
+    margin: 0;
+    color: #FFF;
+    font-family: 'rosarioregular';
+    padding: 15px;
+}
+
+.price-top {
+    background: #3a6498;
+    text-align: center;
+    color: #FFF;
+}
+
+.price-content {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 28px;
+    height: 800px;
+}
+
+.price-content ul li {
+    margin: 10px 0;
+}
+
+.price-content h3 {
+    font-family: 'rosariobold_italic';
+    font-size: 25px;
+    color: #405973;
+}
+
+.stack {
+    position: relative;
+}
+
+.price-block {
+    background: #cbe5fe;
+    position: absolute;
+    bottom: -60px;
+    width: 70%;
+    left: 15%;
+    border: 20px solid #FFF;
+}
+
+.price-block .btn {
+    border-radius: 0;
+    width: 100%;
+    font-size: 24px;
+    padding: 25px;
+}
+
+.dr-blue {
+    background: #93cafe;
+}
+
+.amount-lrg, .amount-med, 
+.amount-sm, .amount {
+    padding: 15px;
+}
+
+.amount-lrg strong {
+    font-size: 48px;
+}
+
+.amount-med strong, .amount-sm strong {
+    font-size: 30px;
+}
+
+
+.amount-lrg, .amount-med, .amount-sm {
+    text-align: center;
+}
+
+.stack {
+    background: url('images/product/cow.jpg') no-repeat #f3f3f3;
+    background-position-x: 330px;
+    background-position-y: 300px;
+}
+
+.free {
+    background: url('images/product/doc.jpg') no-repeat #f3f3f3;
+    background-position-x: 330px;
+    background-position-y: 300px;
+}
+
+.light-grey {
+    background: #f8f7f7;
+}
+
+.feature {
+    margin: 0 0 40px 0;
+    max-height: 200px;
+    height: 110px;   
+}
+
+.feature-content {
+    font-size: 18px;
+    width: 65%;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    vertical-align: middle;
+}
+
+.slideshow {
+    border-top: 5px solid #d5d3d3;
+    border-bottom: 5px solid #d5d3d3;
+}
+
+/* = Members *
+----------------------------------------------- */
+.member {
+    text-align: center;
+}
+
+.member h3 {
+    color: #4492f5;
+    font-family: 'rosariobold_italic';
+    font-size: 30px;
+}
+
+img.member {
+    border: 10px solid #cbe5ff;
+}
+
+
+
+/* = Blog *
+----------------------------------------------- */
+.post-wrap {
+    border-bottom: 1px solid #e5ebf4;
+    padding: 50px 0;
+}
+
+.post-wrap .blog-title {
+    color: #4492f5;
+    font-family: 'rosariobold_italic';
+}
+
+.post-wrap .meta {
+    color: #6487b4;
+    font-family: 'rosarioitalic';
+}
+
+.sidebar {
+    margin-top: 50px;
+}
+
+.widget-area {
+    margin-bottom: 40px;
+}
+
+.widg-title {
+    background: #f3f3f3;
+    margin: -15px -15px 10px -15px;
+}
+
+.widg-content, .widget-area {
+    background: #f9f8f8;
+    padding: 15px;
+}
+
+.widg-content ul {
+    margin-left: -40px;
+}
+
+.widg-content ul li {
+    list-style: none;
+}
+
+.widg-title h3 {
+    padding: 15px;
+    margin: 0;
+    color: #405973;
+    font-size: 24px;
+    font-family: 'rosariobold_italic';
+}
+
+.post-wrap .btn {
+    background: #3189f5;
+    border-radius: 0;
+    font-family: 'rosarioitalic';
+}
+
+.fb, .twit, .insta {
+    font-family: 'rosariobold';
+    font-size: 20px;
+}
+
+.fb a, .twit a, .insta a {
+    padding-left: 10px;
+}
+
+.twit a {
+    color: #00a9ea;
+}
+
+.insta a {
+    color: #e4266c;
+}
+
+.pagination span {
+    padding: 3px 10px;
+    margin: 0 10px;
+}
+
+.pagination .current {
+    background: #0080ff;
+    color: #FFF;
+}
+
+
+/* Slideshow */
+.carousel-control.left, 
+.carousel-control.right {
+    width: 93px;
+    height: 110px;
+    text-indent: 200px;
+    overflow: hidden;
+    opacity: 1.0;
+}
+
+.carousel-control.left {
+    background: url('images/slideshow/left-arrow.jpg') no-repeat;
+    top: 40%;
+    left: 10%;
+}
+
+.carousel-control.right {
+    background: url('images/slideshow/right-arrow.jpg') no-repeat;
+    top: 40%;
+    right: 10%;
+}
+
+
+
+/* =Custom Fonts *
+----------------------------------------------- */
+
+strong {
+    font-family: 'rosariobold';
+}
+
+@font-face {
+    font-family: 'rosariobold';
+    src: url('fonts/rosario-bold-webfont.eot');
+    src: url('fonts/rosario-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rosario-bold-webfont.woff') format('woff'),
+         url('fonts/rosario-bold-webfont.ttf') format('truetype'),
+         url('fonts/rosario-bold-webfont.svg#rosariobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rosarioregular';
+    src: url('fonts/rosario-regular-webfont.eot');
+    src: url('fonts/rosario-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rosario-regular-webfont.woff') format('woff'),
+         url('fonts/rosario-regular-webfont.ttf') format('truetype'),
+         url('fonts/rosario-regular-webfont.svg#rosarioregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rosariobold_italic';
+    src: url('fonts/rosario-bolditalic-webfont.eot');
+    src: url('fonts/rosario-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rosario-bolditalic-webfont.woff') format('woff'),
+         url('fonts/rosario-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/rosario-bolditalic-webfont.svg#rosariobold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rosarioitalic';
+    src: url('fonts/rosario-italic-webfont.eot');
+    src: url('fonts/rosario-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rosario-italic-webfont.woff') format('woff'),
+         url('fonts/rosario-italic-webfont.ttf') format('truetype'),
+         url('fonts/rosario-italic-webfont.svg#rosarioitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
