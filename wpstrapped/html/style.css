@@ -103,17 +103,17 @@ a img.aligncenter {
 
 /* =Drop Down Menu *
 ----------------------------------------------- */
-.nav ul.children {
+.nav ul.sub-menu {
     display: none;
     background: #CCC;
     margin-top: 20px;
 }
 
-ul.nav li a:hover {
+ul.subnav li a:hover {
     
 }
 
-ul.nav li:hover > ul.children {
+ul.nav li:hover > ul.sub-menu {
 	display: block;
         position: absolute;
         width: 200px;
